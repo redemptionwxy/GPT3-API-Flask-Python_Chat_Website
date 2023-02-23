@@ -26,7 +26,7 @@ def get_request_json():
     if request.method == 'POST':
         if len(request.form['question']) < 1:
             return render_template(
-                'chat.html', question="NULL", res="Question can't be empty!")
+                'chat_2.html', question="NULL", res="Question can't be empty!",temperature="NULL")
         question = request.form['question']
         temperature = float(request.form['temperature'])
         print("======================================")
@@ -36,8 +36,8 @@ def get_request_json():
         print("Q：\n", question)
         print("A：\n", res)
 
-        return render_template('chat.html', question=question, res=str(res), temperature=temperature)
-    return render_template('chat.html', question=0)
+        return render_template('chat_2.html', question=question, res=str(res), temperature=temperature)
+    return render_template('chat_2.html', question=0)
 
 if __name__ == '__main__':
     server.run(debug=True, host='0.0.0.0', port=80)
