@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Davinci-003</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Davinci-003</h1>
+    <h2>Artificial Intelligence at Your Fingertips</h2>
+  </header>
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="content">
+            <h2>Temperature</h2>
+            <form method="post" onsubmit="submit.disabled=true">
+              <label for="temperature">Temperature:</label>
+              <input type="range" name="temperature" id="temperature" min="0" max="1" step="0.1" value="0.5" onchange="show()">
+              <input type="text" id="temperature-value" id="temperature-value" value="0.5">
+              <br>
+              <textarea name="question" placeholder="Type your question here." rows="4"></textarea>
+              <br>
+              <input type="submit" value="Submit" id="submit">
+            </form>
+            <div id="loading"><b>Waiting for response...</b></div>
+
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="sidebar">
+            <h3>Temperature Guide</h3>
+            <ul>
+              <li>Code Refactoring - 0.2</li>
+              <li>Email Parser - 0.3</li>
+              <li>Chat Bot - 0.5</li>
+              <li>Summarise Text - 0.5</li>
+              <li>Code Generation - 0.8</li>
+              <li>Story Writing - 0.8</li>
+            </ul>
+          </div>
+          <button id="sidebarToggle">Hide Temperature Guide</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="dia">                
+      {% if question %}
+        <div class="result">
+          <div class="question"><b>Alittlebean:</b>
+            <pre>{{ question }}</pre>
+          </div>
+          <hr>
+          <div class="response"><b>Davinci-003-Tem-{{ temperature }}:</b>
+            <pre>{{ res }}</pre>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+
+  </main>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>
+  <script src="static/script.js"></script>
+  <script>
+    $("#sidebarToggle").click(function() {
+      $(".sidebar").toggle();
+      if ($(".sidebar").is(":visible")) {
+        $(this).text("Hide Temperature Guide");
+      } else {
+        $(this).text("Show Temperature Guide");
+      }
+    });
+  </script>
+</body>
+
+</html>
