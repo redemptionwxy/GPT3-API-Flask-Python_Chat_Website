@@ -31,7 +31,15 @@ So, I asked chatGPT kindly for a better design and proposed three improving requ
 
 Here is the comparison of the original website and the chatGPT improved website.
 
+
+Original Website:
+
+
 ![Original Website](https://user-images.githubusercontent.com/47026637/221028457-c058be26-f9c2-4f79-b0c5-602ef44b2b55.png)
+
+
+ChatGPT Improved Website:
+
 
 ![ChatGPT Improved Website](https://user-images.githubusercontent.com/47026637/221028551-90f87944-8424-4323-bb43-e356db83486c.png)
 
