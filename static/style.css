@@ -1,0 +1,101 @@
+/* import Bootstrap */
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
+
+/* add custom styles */
+body {
+  font-family: sans-serif;
+}
+
+header {
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+main {
+  padding: 1rem;
+}
+
+h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+form {
+  margin-top: 1rem;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  resize: vertical;
+  font-size: 1.2rem;
+}
+
+input[type="range"] {
+  width: 60%;
+  margin: 0 1rem;
+}
+
+input[type="text"] {
+  border: none;
+  background: none;
+  width: 30px;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: 1rem auto;
+  width: 150px;
+  height: 50px;
+  background-color: lightpink;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#loading {
+  display: none;
+  color: gray;
+  margin-top: 1rem;
+}
+
+#sidebarToggle{
+  display: block;
+  margin: 1rem auto;
+  width: 200px;
+  height: 50px;
+  background-color: lightblue;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+pre {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.sidebar{
+  margin-top: 20px;
+}
+
+.dia{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
