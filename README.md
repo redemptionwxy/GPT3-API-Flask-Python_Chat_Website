@@ -19,7 +19,7 @@ pip install flask
 
 __________________________________________________________________________________
 
-<<<<<<<<<<<<<< Update >>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Update >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 As you can see the previous version of website (main.py + chat.html) is quite shaby. 
 
