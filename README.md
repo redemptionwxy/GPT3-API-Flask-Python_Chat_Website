@@ -1,7 +1,7 @@
 # GPT3-API-Flask-Python_Chat_Website
 Utilize OpenAI GPT-3 API to build a python flask-based website
 
-Here is my Chinese blog about the Install Guidance: http://t.csdn.cn/aH3y4
+Here is my ChatGPT API (GPT-3.5) github link https://github.com/redemptionwxy/ChatGPT-API-Flask-Website
 
 Python3 Environment:
 
